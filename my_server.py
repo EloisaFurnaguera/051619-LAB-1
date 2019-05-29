@@ -73,10 +73,10 @@ def greet_person():
       </head>
       <body>
         Hi, {}! I think you're {}!<br>
-        <a href = "/diss">Do you want to hear the truth?</a>
+        <a href="/diss?person={}">Do you want to hear the truth?</a>
       </body>
     </html>
-    """.format(player, compliment)
+    """.format(player, compliment, player)
 
 
 @app.route("/diss")
